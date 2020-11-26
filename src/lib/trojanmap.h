@@ -6,7 +6,7 @@
 #include <iostream>
 #include <map>
 #include <vector>
-
+#include <unordered_set>
 // A Node is the location of one point in the map.
 class Node {
   public:
@@ -60,7 +60,8 @@ class TrojanMap {
 
   // Get the name of a Node given its id.
   std::string GetName(std::string id);
-
+  
+  std::string GetID(std::string name);
   // Get the neighbor ids of a Node.
   std::vector<std::string> GetNeighborIDs(std::string id);
 
@@ -80,7 +81,7 @@ class TrojanMap {
   // on the shortest path.
   std::vector<std::string> CalculateShortestPath(std::string location1_name,
                                                  std::string location2_name);
-
+  //std::string FindMinInDButNotInVisited(std::map<std::string, long double> d, std::unordered_set<std::string> visited);
   // Given a vector of location ids, it should reorder them such that the path
   // that covers all these points has the minimum length.
   // The return value is a pair where the first member is the total_path,
@@ -89,7 +90,12 @@ class TrojanMap {
   // path.)
   std::pair<double, std::vector<std::vector<std::string>>> TravellingTrojan(
       std::vector<std::string> &location_ids);
-
+  void DFS_helper(std::vector<std::string> &location_ids, std::pair<double, std::vector<std::vector<std::string>>> &results, std::vector<std::string> path, double &min_dist, double dist);
+  std::vector<std::vector<std::string>> Permute(std::vector<std::string> &location_ids);
+  void Permute_aux(std::vector<std::string> &location_ids, std::vector<std::vector<std::string>> &result, std::vector<std::string> curResult);
+  std::pair<double, std::vector<std::vector<std::string>>> TravellingTrojan_2opt(
+      std::vector<std::string> &location_ids);
+  std::vector<std::string> TwoOptSwap(std::vector<std::string> tour, int i, int k);
   //-----------------------------------------------------
 
   
