@@ -19,7 +19,7 @@ This project focuses on using data structures and graph search algorithms to bui
 **************************************************************
 ```
 When you type a number in the menu, it will go to the function. You need follow the function instruction and it will give you teh reuslt you want. Here is a little demo of how this program works.
-<p align="center"><img src="img/demo.gif" alt="TSP videos" width="500"/></p>
+<p align="center"><img src="img/demo2.gif" alt="TSP videos" width="500"/></p>
 
 ---
 
