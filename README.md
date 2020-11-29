@@ -61,7 +61,8 @@ iterate all nodes:
 <p align="center"><img src="img/f1-4.png" alt="TSP videos" width="500"/></p>
 
 #### Discussion
-When I implementation this functiuon first time, I didn't see the claim, "a list of possible locations with partial name as **prefix**", I miss the key word Prefix, so I return the all nodes' name which contain the input string. Finally, I change the find() third parameter from end() to 0, and then it can just return the right results.
+When I implementation this functiuon first time, I didn't see the claim, "a list of possible locations with partial name as **prefix**", I miss the key word Prefix, so I return the all nodes' name which contain the input string. Finally, I change the find() third parameter from end() to 0, and then it can just return the right results.<br>
+Time complexity is O(n)<br>
 
 ---
 
@@ -85,6 +86,7 @@ for all nodes:
 
 ####  Discussion
 This function is an easy one.
+Time complexity is O(n)<br>
 
 ---
 
