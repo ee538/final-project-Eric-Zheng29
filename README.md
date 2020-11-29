@@ -18,7 +18,7 @@ This project focuses on using data structures and graph search algorithms to bui
 * 6. Exit
 **************************************************************
 ```
-When you type a number in the menu, it will go to the function. You need follow the function instruction and it will give you teh reuslt you want. Here is a little demo of how this program works.
+When you type a number in the menu, it will go to the function. You need follow the function instruction and it will give you the reuslt you want. Here is a little demo of how this program works.
 <p align="center"><img src="img/demo2.gif" alt="TSP videos" width="500"/></p>
 
 ---
