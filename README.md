@@ -70,6 +70,7 @@ When I implementation this functiuon first time, I didn't see the claim, "a list
 std::pair<double, double> GetPosition(std::string name);
 ```
 When user inputs a location name which he/she wants to get its position(latitude and longtitude), if this position is in this map, the program will print its position, otherwise print "do not find". What's more, for visulizition, if found, it will be marked as a red point in the map. This input string is case sensitive.<br>
+
 #### Pseudocode
 ```
 for all nodes:
@@ -93,6 +94,7 @@ std::vector<std::string> CalculateShortestPath(std::string location1_name,
                                                std::string location2_name);
 ```
 This function wants to find the shortest path between two locations. If found, it will print the shortest path. Otherwise, print "path not found".
+
 #### Pseudocode
 ```
 first find source node's id and target node's id;
@@ -100,6 +102,7 @@ create a priority queue to store distance from source node to all other nodes;
 Pop the top element of heap, iterate its neighbors, if find a shorter path, update path
 Get the shortest path from source to others, just return the one we want
 ```
+
 #### Examples of function3
 <p align="center"><img src="img/f3-1.png" alt="TSP videos" width="500"/></p>
 <p align="center"><img src="img/f3-2.png" alt="TSP videos" width="500"/></p>
@@ -111,6 +114,7 @@ This problem took me a lot time. I do implement Dijkstra algorithm correctly, bu
 Time complexity of Dijkstra algorithm is O(v^2)<br>
 
 ---
+
 ### Function4: TravelingTrojan---Brute force & 2_OPT algorithm
 ```c++
 std::pair<double, std::vector<std::vector<std::string>>> TravellingTrojan(
@@ -132,6 +136,7 @@ std::pair<double, std::vector<std::vector<std::string>>> TravellingTrojan(
 std::pair<double, std::vector<std::vector<std::string>>> TravellingTrojan_2opt(
       std::vector<std::string> &location_ids);
 ```
+
 #### Pseudocode
 Brute force
 ```
@@ -157,6 +162,7 @@ repeat until no improvement is made {
 }
 ```
 <p align="center"><img src="img/2-opt.jpg" alt="TSP videos" width="500"/></p>
+
 #### Examples of function4
 <p align="center"><img src="img/4-1.png" alt="TSP videos" width="500"/></p>
 <p align="center"><img src="img/4-2.png" alt="TSP videos" width="500"/></p>
